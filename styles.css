@@ -1,0 +1,294 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #1c1c1c;
+}
+
+header {
+  background-color: #1c1c1c;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.site-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.name-row {
+  display: flex;
+  align-items: baseline;
+}
+
+.site-title h1,
+.site-title h2 {
+  margin: 0;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+.site-title h1 {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.site-title h1.panijan {
+  margin-left: 10px;
+}
+
+.site-title h2 {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #999;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #939a9a;
+}
+
+main {
+  padding: 20px;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #1c1c1c;
+  align-items: start;
+}
+
+.skills {
+  grid-column: 1 / 3;
+}
+
+.image-about-me {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px; /* Lower the section */
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  max-height: 800px; /* Adjust this value as needed */
+}
+
+.about-me {
+  width: 32%;
+  margin-top: 150px; /* Lower the About Me text */
+}
+
+.about-me p {
+  margin: 10px 0; /* Adjust this value as needed for smaller spacing */
+}
+
+.yellow-text {
+  color: #ffd700;
+}
+.smaller-text {
+  font-size: 1.5em; /* Manji font za podnaslove */
+}
+.larger-text {
+  font-size: 2em;
+}
+
+footer {
+  background-color: #1c1c1c;
+  border-top: 1px solid #e7e7e7;
+  padding: 10px 20px;
+  color: white;
+  text-align: center; /* Center text */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between text and icons */
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icons a {
+  color: white;
+  font-size: 18px;
+}
+
+.footer-icons a:hover {
+  color: #007bff;
+}
+
+.skills-list {
+  margin-left: 300px; /* Adjust this value to your preference */
+}
+
+.character-art-content,
+.environment-art-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-text {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.video {
+  flex: 1;
+}
+
+.software-used {
+  flex: 1;
+}
+
+.description {
+  text-align: left;
+}
+
+.images-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.images-row img {
+  width: 30%;
+}
+.half-image {
+  width: 50%;
+}
+
+.center-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+.large-image {
+  max-width: 80%;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 0 10px;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-text {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.carousel-text .text {
+  width: 40%;
+  padding-left: 20px;
+}
+
+.small-carousel img {
+  width: auto; /* Maintain aspect ratio */
+  max-height: 500px; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the image */
+}
+.tiny-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.carousel-text .carousel-container.small-carousel {
+  width: 60%;
+}
+.tiny-carousel img {
+  width: calc(
+    33.33% - 10px
+  ); /* Adjust this value to fit three images per row */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Adjust this value as needed */
+}
